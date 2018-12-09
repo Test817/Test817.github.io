@@ -1301,7 +1301,7 @@ footer .bottom-search button:hover:after {
     right: 15px;
     width: 80px;
   }
-  main .advertising .ad-small .ad-bait img[src='img/ad-small-car.png'] {
+  main .advertising .ad-small .ad-bait #smallCarImage {
     width: 140px;
     height: 100px;
     left: calc(50% - 70px);
