@@ -1,0 +1,1545 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  user-select: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .bought-form, header .bought-form form .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  height: 100vh;
+  background: #131210;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 60px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .top-menu {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  box-sizing: border-box;
+}
+
+header .top-menu .logo {
+  background-image: url("../img/logo-icon.png");
+  width: 50px;
+  height: 49px;
+  cursor: pointer;
+}
+
+header .top-menu .burger {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  display: none;
+  z-index: 20;
+}
+
+header .top-menu .burger span {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+header .top-menu .right-menu {
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+
+header .top-menu .right-menu .contact-1 {
+  display: flex;
+  margin-right: 40px;
+}
+
+header .top-menu .right-menu .contact-1 span {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header .top-menu .right-menu .contact-1 img {
+  width: 35px;
+  height: 28px;
+  margin-right: 20px;
+}
+
+header .top-menu .right-menu .contact-2 {
+  display: flex;
+}
+
+header .top-menu .right-menu .contact-2 span {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header .top-menu .right-menu .contact-2 img {
+  width: 35px;
+  height: 28px;
+  margin-right: 20px;
+}
+
+header .top-menu .right-menu .liquid-button {
+  margin: auto;
+  margin-top: 0;
+  margin-right: -40px;
+}
+
+header .top-menu .right-menu .liquid-button path {
+  cursor: pointer;
+}
+
+header .car-img {
+  width: 760px;
+  height: 440px;
+}
+
+header .bought-form {
+  flex-direction: column;
+  width: 100vw;
+}
+
+header .bought-form h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+header .bought-form form {
+  display: flex;
+}
+
+header .bought-form form .effect-container {
+  width: 325px;
+  height: 45px;
+  margin-right: 60px;
+  position: relative;
+}
+
+header .bought-form form .effect-container input {
+  width: 325px;
+  height: 45px;
+  border: none;
+  border-bottom: 1px solid #3c3c3c;
+  background: none;
+  outline: none;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #3c3c3c;
+  margin-right: 60px;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+header .bought-form form .effect-container input:placeholder {
+  color: #3c3c3c;
+}
+
+header .bought-form form .effect-container input:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+
+header .bought-form form .effect-container input ~ .focus-border {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.4s;
+}
+
+header .bought-form form .submit {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 215px;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  overflow: hidden;
+  background: #135ec5;
+}
+
+header .bought-form form .submit span {
+  z-index: 20;
+}
+
+header .bought-form form .submit:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  width: 50px;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transform: rotate(35deg);
+  z-index: 10;
+}
+
+header .bought-form form .submit:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+main .marks {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  padding: 30px 0 30px 0;
+  justify-content: space-around;
+}
+
+main .marks h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #c1c1c1;
+  text-align: center;
+}
+
+main .marks .marks-block {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 35px;
+}
+
+main .marks .marks-block .marks-container {
+  width: 50px;
+  height: 50px;
+}
+
+main .BMW {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+}
+
+main .BMW .photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .BMW .photo .top-text {
+  width: 440px;
+  height: 125px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+main .BMW .photo .bmw-img {
+  width: 520px;
+  height: 280px;
+  z-index: 1000;
+}
+
+main .BMW .photo .bottom-text {
+  width: 610px;
+  height: 125px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 500;
+}
+
+main .BMW .bmw-info {
+  width: 700px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main .BMW .bmw-info h5 {
+  font-size: 60px;
+  color: #135ec5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+main .BMW .bmw-info span {
+  font-size: 16px;
+  color: #c1c1c1;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+}
+
+main .BMW .bmw-info .bmw-btn {
+  width: 215px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  background: #135ec5;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  transition: .3s;
+}
+
+main .BMW .bmw-info .bmw-btn:hover {
+  transform: scale(1.2);
+}
+
+main .BMW .bmw-info .bmw-btn:hover:after {
+  transform: scale(1);
+}
+
+main .add {
+  height: 540px;
+  width: 100vw;
+  background: #135ec5;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 100px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+main .add h1 {
+  margin-bottom: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 900;
+}
+
+main .add .section-btn {
+  border: 1px solid #fff;
+  width: 215px;
+  height: 50px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+main .add .section-btn span {
+  z-index: 20;
+}
+
+main .add .section-btn:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  width: 50px;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transform: rotate(35deg);
+  z-index: 10;
+}
+
+main .add .section-btn:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+main .add img {
+  position: absolute;
+  top: 70%;
+}
+
+main .advertising {
+  padding: 255px 0 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-around;
+  z-index: 1000;
+}
+
+main .advertising .ad-small {
+  box-shadow: 4px 4px 15px 5px #f6f7f9;
+  width: 450px;
+  height: 570px;
+  z-index: 1000;
+}
+
+main .advertising .ad-small .ad-bait {
+  width: 100%;
+  height: 200px;
+  background: #135ec5;
+  position: relative;
+}
+
+main .advertising .ad-small .ad-bait div {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #135ec5;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  z-index: 20;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+main .advertising .ad-small .ad-bait div:hover {
+  transition: 0.4s;
+  background: #7B68EE;
+  color: #fff;
+}
+
+main .advertising .ad-small .ad-bait img[src='img/furie.png'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main .advertising .ad-small .ad-bait img[src='img/smallСar.png'] {
+  position: absolute;
+  top: 65%;
+  width: 270px;
+  height: 150px;
+  left: calc(50% - 135px);
+}
+
+main .advertising .ad-small .ad-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 135px 0 45px 0;
+  height: 370px;
+  box-sizing: border-box;
+}
+
+main .advertising .ad-small .ad-info h5 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+main .advertising .ad-small .ad-info h2 {
+  color: #135ec5;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+main .advertising .ad-small .ad-info h1 {
+  color: #c1c1c1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  z-index: 2;
+}
+
+main .advertising .ad-small .ad-info .string {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+main .advertising .ad-small .ad-info .string .price {
+  color: #16ad2c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  z-index: 2;
+}
+
+main .advertising .ad-small .ad-info .string .ad-small-info-btn {
+  width: 190px;
+  height: 50px;
+  background: #d9d9d9;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+main .advertising .ad-small .ad-info .string .ad-small-info-btn span {
+  z-index: 2;
+}
+
+main .advertising .ad-small .ad-info .string .ad-small-info-btn:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  width: 50px;
+  transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  transform: rotate(35deg);
+  z-index: 1;
+}
+
+main .advertising .ad-small .ad-info .string .ad-small-info-btn:hover:after {
+  left: 120%;
+  transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+main .advertising .slider {
+  width: 950px;
+  height: 685px;
+  outline: none;
+  box-shadow: 4px 4px 15px 5px #f6f7f9;
+  z-index: 1000;
+}
+
+main .advertising .slider .ad-big {
+  display: flex;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+main .advertising .slider .ad-big .ad-big-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 505px;
+  height: 685px;
+  padding: 0 40px 0 60px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+main .advertising .slider .ad-big .ad-big-info .string {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .advertising .slider .ad-big .ad-big-info .string span {
+  color: #e2e2e2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+main .advertising .slider .ad-big .ad-big-info .string .price {
+  color: #16ad2c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+main .advertising .slider .ad-big .ad-big-info .car-info {
+  width: 330px;
+}
+
+main .advertising .slider .ad-big .ad-big-info .car-info h5 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #135ec5;
+  margin-bottom: 45px;
+}
+
+main .advertising .slider .ad-big .ad-big-info .car-info p {
+  font-family: "Open Sans", sans-serif;
+  color: #c1c1c1;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+main .advertising .slider .ad-big .ad-big-info button {
+  width: 210px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: #135ec5;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 900;
+  position: relative;
+  z-index: 500;
+  transition: 0.3s;
+}
+
+main .advertising .slider .ad-big .ad-big-info button:hover {
+  transform: scale(1.2);
+}
+
+main .advertising .slider .ad-big .ad-big-info button:hover:after {
+  transform: scale(1);
+}
+
+main .advertising .slider .ad-big .car-image {
+  width: 445px;
+  height: 685px;
+  background: #135ec5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+main .advertising .slider .ad-big .car-image .slick-dots {
+  bottom: 30px;
+}
+
+main .advertising .slider .ad-big .car-image .slick-dots button:before {
+  font-size: 30px;
+}
+
+main .advertising .slider .ad-big .car-image .fresh {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #135ec5;
+  background: #fff;
+  outline: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.4s;
+}
+
+main .advertising .slider .ad-big .car-image .fresh:hover {
+  transition: 0.4s;
+  background: #7B68EE;
+  color: #fff;
+}
+
+main .advertising .slider .ad-big .car-image img {
+  position: absolute;
+  left: -90px;
+  width: 600px;
+  height: 350px;
+  clip-path: polygon(0% 0%, 89% 0%, 89% 100%, 0% 100%);
+}
+
+footer {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px 10px #f6f7f9;
+  margin-bottom: 75px;
+}
+
+footer .top-search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 75px 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+footer .top-search .top-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+footer .top-search .top-inputs .effect-blue {
+  flex-basis: 20.1%;
+  height: 40px;
+  position: relative;
+}
+
+footer .top-search .top-inputs .effect-blue .geo {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+footer .top-search .top-inputs .effect-blue .geo #icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 12px);
+}
+
+footer .top-search .top-inputs .effect-blue .geo .geo-input {
+  padding-right: 35px;
+}
+
+footer .top-search .top-inputs .effect-blue .geo .geo-input:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.3s;
+  left: 0;
+}
+
+footer .top-search .top-inputs .effect-blue .geo .geo-input ~ .focus-border {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.3s;
+}
+
+footer .top-search .top-inputs .effect-blue .geo-input, footer .top-search .top-inputs .effect-blue input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  height: 40px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+}
+
+footer .top-search .top-inputs .effect-blue .geo-input::placeholder, footer .top-search .top-inputs .effect-blue input::placeholder {
+  color: #c1c1c1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .top-search .top-inputs .effect-blue .geo-input:focus ~ .focus-border, footer .top-search .top-inputs .effect-blue input:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.3s;
+  left: 0;
+}
+
+footer .top-search .top-inputs .effect-blue .geo-input ~ .focus-border, footer .top-search .top-inputs .effect-blue input ~ .focus-border {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.3s;
+}
+
+footer .top-search .marks-slider {
+  width: 100%;
+  margin: 60px 0;
+}
+
+footer .top-search .marks-slider .arrow-left, footer .top-search .marks-slider .arrow-right {
+  display: none;
+}
+
+footer .top-search .marks-slider .marks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top-search .marks-slider .marks img.mark {
+  height: 45px;
+}
+
+footer .top-search .top-bottom-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+footer .top-search .top-bottom-inputs .effect-blue {
+  flex-basis: 20.1%;
+  position: relative;
+  height: 40px;
+}
+
+footer .top-search .top-bottom-inputs input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  height: 40px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+footer .top-search .top-bottom-inputs input::placeholder {
+  color: #c1c1c1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .top-search .top-bottom-inputs input::placeholder {
+  color: #c1c1c1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .top-search .top-bottom-inputs input:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.3s;
+  left: 0;
+}
+
+footer .top-search .top-bottom-inputs input ~ .focus-border {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.3s;
+}
+
+footer .bottom-search {
+  width: 100%;
+  background: #135ec5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 75px 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+footer .bottom-search .title {
+  background: #135ec5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  left: calc(50% - 95px);
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: -30px;
+  height: 30px;
+  width: 190px;
+  border-radius: 10px 10px 0 0;
+}
+
+footer .bottom-search .bottom-bottom-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+footer .bottom-search .bottom-bottom-inputs .effect-white {
+  height: 40px;
+  position: relative;
+  flex-basis: 20.1%;
+  margin-bottom: 30px;
+}
+
+footer .bottom-search .bottom-bottom-inputs .effect-white input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3676ce;
+  height: 40px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  background: none;
+}
+
+footer .bottom-search .bottom-bottom-inputs .effect-white input::placeholder {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+footer .bottom-search .bottom-bottom-inputs .effect-white input:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.3s;
+  left: 0;
+}
+
+footer .bottom-search .bottom-bottom-inputs .effect-white input ~ .focus-border {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+footer .bottom-search button {
+  width: 205px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #135ec5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+  margin-top: 40px;
+}
+
+footer .bottom-search button:hover {
+  transition: 0.4s;
+  background: #7B68EE;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+footer .bottom-search button:hover:after {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1600px) {
+  main .advertising {
+    flex-direction: column;
+    padding-top: 150px;
+  }
+  main .advertising .ad-small {
+    margin-bottom: 60px;
+  }
+  main .advertising .slider {
+    width: 550px;
+    height: 580px;
+  }
+  main .advertising .slider .ad-big .ad-big-info {
+    height: 580px;
+    width: 350px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .string span {
+    font-size: 12px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .string .price {
+    font-size: 18px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info {
+    width: 200px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info h5 {
+    font-size: 18px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  main .advertising .slider .ad-big .ad-big-info button {
+    width: 180px;
+    height: 45px;
+  }
+  main .advertising .slider .ad-big .car-image {
+    width: 200px;
+    height: 580px;
+  }
+  main .advertising .slider .ad-big .car-image img {
+    width: 350px;
+    height: 250px;
+    clip-path: polygon(0% 0%, 82.85% 0%, 82.85% 100%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  header {
+    height: auto;
+  }
+  header .bought-form h3 {
+    text-align: center;
+  }
+  header .bought-form form {
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+  header .bought-form form .effect-container:first {
+    margin-bottom: 0;
+  }
+  header .bought-form form .effect-container {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  header .bought-form form .submit {
+    margin-top: 20px;
+  }
+  header .car-img {
+    margin: 100px 0;
+  }
+  main .BMW {
+    flex-direction: column-reverse;
+    padding: 60px 0;
+  }
+  main .BMW .bmw-info {
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  footer .top-search .top-inputs {
+    height: auto;
+  }
+  footer .top-search .top-inputs .effect-blue {
+    margin-bottom: 20px;
+    flex-basis: 40%;
+  }
+  footer .top-search .top-inputs .effect-blue:last-child {
+    margin-bottom: 0;
+  }
+  footer .top-search .top-bottom-inputs {
+    height: auto;
+  }
+  footer .top-search .top-bottom-inputs .effect-blue {
+    flex-basis: 40%;
+    margin-bottom: 20px;
+  }
+  footer .top-search .top-bottom-inputs .effect-blue:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding-top: 20px;
+  }
+  header .car-img {
+    width: 560px;
+    height: 340px;
+  }
+  footer .bottom-search {
+    padding: 50px 50px;
+  }
+  footer .bottom-search .bottom-bottom-inputs .effect-white {
+    flex-basis: 40%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header .top-menu {
+    padding-right: 30px;
+  }
+  header .top-menu .burger {
+    display: flex;
+  }
+  header .top-menu .right-menu {
+    display: none;
+    width: 280px;
+    height: 350px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #2B2B2B, #000000);
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    top: 0;
+    right: -280px;
+    z-index: 10;
+    border-radius: 0 0 0 30px;
+  }
+  header .top-menu .right-menu .contact-1 {
+    margin-right: 0;
+  }
+  header .top-menu .right-menu .contact-2 {
+    margin-bottom: -25px;
+  }
+  header .top-menu .right-menu .liquid-button {
+    margin: 0;
+  }
+  main .marks .marks-block {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  main .marks .marks-block .mark-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  main .marks .marks-block .mark-container:last-child {
+    margin-bottom: 0;
+  }
+  main .add h1 {
+    font-size: 40px;
+  }
+  footer .top-search .marks-slider {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+  }
+  footer .top-search .marks-slider .arrow-left, footer .top-search .marks-slider .arrow-right {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  footer .top-search .marks-slider .marks {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  footer .top-search .marks-slider .marks .slick-slide {
+    width: 60px;
+  }
+  footer .top-search .marks-slider .marks img.mark {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .BMW .bmw-info {
+    width: 80vw;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header .car-img {
+    width: 360px;
+    height: 240px;
+  }
+  main .BMW .photo .top-text {
+    width: 440px;
+    height: 125px;
+  }
+  main .BMW .photo .bmw-img {
+    width: 420px;
+    height: 220px;
+  }
+  main .BMW .photo .bottom-text {
+    width: 610px;
+    height: 125px;
+  }
+  main .add {
+    height: 400px;
+  }
+  main .add h1 {
+    font-size: 30px;
+  }
+  main .add img {
+    top: 80%;
+    width: 450px;
+    height: 200px;
+  }
+  footer .top-search {
+    padding: 35px 20px;
+  }
+  footer .top-search .top-inputs .effect-blue {
+    flex-basis: 100%;
+  }
+  footer .top-search .top-bottom-inputs .effect-blue {
+    flex-basis: 100%;
+  }
+  footer .bottom-search {
+    padding: 20px 20px;
+  }
+  footer .bottom-search .bottom-bottom-inputs .effect-white {
+    flex-basis: 100%;
+  }
+  footer .bottom-search .bottom-bottom-inputs .effect-white:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main .advertising .ad-small {
+    width: 250px;
+    height: 350px;
+  }
+  main .advertising .ad-small .ad-bait {
+    height: 120px;
+  }
+  main .advertising .ad-small .ad-bait div {
+    right: 15px;
+    width: 80px;
+  }
+  main .advertising .ad-small .ad-bait img[src='img/ad-small-car.png'] {
+    width: 140px;
+    height: 100px;
+    left: calc(50% - 70px);
+    top: 60%;
+  }
+  main .advertising .ad-small .ad-info {
+    height: 230px;
+    padding: 60px 0 20px 0;
+  }
+  main .advertising .ad-small .ad-info h5 {
+    font-size: 20px;
+  }
+  main .advertising .ad-small .ad-info h1 {
+    font-size: 14px;
+  }
+  main .advertising .ad-small .ad-info .string .price {
+    font-size: 18px;
+  }
+  main .advertising .ad-small .ad-info .string .ad-small-info-btn {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
+  main .advertising .slider {
+    width: 370px;
+    height: 400px;
+  }
+  main .advertising .slider .ad-big .ad-big-info {
+    width: 250px;
+    height: 400px;
+    padding: 0 20px 0 20px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info {
+    width: 190px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info h5 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info p {
+    font-size: 13px;
+  }
+  main .advertising .slider .ad-big .car-image {
+    width: 120px;
+    height: 400px;
+  }
+  main .advertising .slider .ad-big .car-image img {
+    width: 200px;
+    height: 150px;
+    clip-path: polygon(0% 0%, 80% 0%, 80% 100%, 0% 100%);
+    left: -40px;
+  }
+  main .advertising .slider .ad-big .car-image .fresh {
+    top: 15px;
+    width: 80px;
+    right: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .BMW .bmw-info {
+    padding-bottom: 50px;
+  }
+  main .BMW .bmw-info h5 {
+    font-size: 40px;
+  }
+  main .BMW .bmw-info span {
+    font-size: 14px;
+    margin: 30px 0;
+  }
+  main .BMW .photo .top-text {
+    width: 340px;
+    height: 100px;
+  }
+  main .BMW .photo .bmw-img {
+    width: 250px;
+    height: 120px;
+  }
+  main .BMW .photo .bottom-text {
+    width: 340px;
+    height: 100px;
+  }
+  main .add {
+    height: 340px;
+    padding-top: 60px;
+  }
+  main .add h1 {
+    font-size: 25px;
+  }
+  main .add img {
+    top: 75%;
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  header .car-img {
+    width: 260px;
+    height: 180px;
+  }
+  header .bought-form form {
+    width: 280px;
+  }
+  header .bought-form form .effect-container {
+    width: 280px;
+  }
+  header .bought-form form .effect-container input {
+    width: 280px;
+  }
+  main .BMW .bmw-info {
+    height: 300px;
+    padding-bottom: 0;
+  }
+  main .add {
+    height: 260px;
+    padding-top: 40px;
+  }
+  main .add h1 {
+    font-size: 20px;
+  }
+  main .add .section-btn {
+    width: 180px;
+    height: 40px;
+  }
+  main .add img {
+    top: 75%;
+    width: 250px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main .advertising .slider {
+    width: 280px;
+  }
+  main .advertising .slider .ad-big {
+    width: 280px;
+  }
+  main .advertising .slider .ad-big .ad-big-info {
+    height: 350px;
+    width: 200px;
+    padding: 0 10px 0 10px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .string .price {
+    font-size: 16px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info {
+    width: 160px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info h5 {
+    font-size: 14px;
+  }
+  main .advertising .slider .ad-big .ad-big-info .car-info p {
+    font-size: 12px;
+  }
+  main .advertising .slider .ad-big .ad-big-info button {
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  main .advertising .slider .ad-big .car-image {
+    width: 80px;
+    height: 350px;
+  }
+  main .advertising .slider .ad-big .car-image img {
+    width: 120px;
+    height: 80px;
+    clip-path: polygon(0% 0%, 91.5% 0%, 91.5% 100%, 0% 100%);
+    left: -30px;
+  }
+  main .advertising .slider .ad-big .car-image .fresh {
+    width: 50px;
+    right: calc(50% - 25px);
+    font-size: 14px;
+  }
+  main .advertising .slider .ad-big .car-image .slick-dots {
+    width: 60px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+  }
+  main .advertising .slider .ad-big .car-image .slick-dots li {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  main .advertising .slider .ad-big .car-image .slick-dots li button {
+    width: 20px;
+    height: 20px;
+  }
+  main .advertising .slider .ad-big .car-image .slick-dots li button:before {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header .bought-form h3 {
+    font-size: 18px;
+  }
+  header .bought-form form {
+    width: 220px;
+  }
+  header .bought-form form .effect-container {
+    width: 220px;
+  }
+  header .bought-form form .effect-container input {
+    width: 220px;
+  }
+  main .BMW .bmw-info h5 {
+    font-size: 30px;
+  }
+  main .BMW .bmw-info span {
+    font-size: 12px;
+    margin: 0;
+  }
+  main .BMW .bmw-info .bmw-btn {
+    height: 40px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main .add h1 {
+    font-size: 15px;
+  }
+  main .add img {
+    width: 230px;
+    height: 110px;
+  }
+  footer .bottom-search button {
+    width: 180px;
+    height: 45px;
+  }
+}
