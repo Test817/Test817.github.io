@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">	
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<h1>Решение задач из паскаля на языках программирования Python и Javascript</h1>
+	</header>
+	<main>
+	<section class="border"></section>
+	<section class="content">
+		<h1 class="condition-title">Условие</h1>
+		<div class="condition">
+			Дана сторона квадрата. Найти его периметр P = 4*a
+		</div>
+		<h1 class="examples-title">Примеры</h1>
+		<div class="examples">
+			<div class="example">
+				<div class="first-part">Исходные данные</div>
+				<div class="last-part">Пример верного решения</div>
+			</div>
+			<div class="example">
+				<div class="first-part">a = 1</div>
+				<div class="last-part">P = 4</div>
+			</div>
+			<div class="example">
+				<div class="first-part">a = 1.7</div>
+				<div class="last-part"> P = 6.8</div>
+			</div>
+		</div>
+		<h1 class="decision-title">Решение</h1>
+		<div class="decision">
+			<div class="code">
+				<div class="title-code">
+					<h1>Решение на языке Python</h1>
+				</div>
+				<div class="code-block">
+					<pre>
+	a = int(input("Введите сторону квадрата: "))
+	print("P =",(a*4))
+					</pre>
+				</div>
+			</div>
+			<div class="code" id="second">
+				<div class="title-code">
+					<h1>Решение на языке Javascript</h1>
+				</div>
+				<div class="code-block">
+					<pre>
+	var a = +prompt("a = ");
+	var P = Math.round(4*a*10) / 10;
+	alert("S = " + P);					
+					</pre>
+				</div>
+			</div>		
+		</div>
+		<h1 class="comment-title">Комментарий</h1>
+		<div class="comment">
+			В задаче используются переменные, их ввод и вывод
+		</div>
+	</section>
+</main>
+<footer></footer>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
