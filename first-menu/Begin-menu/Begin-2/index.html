@@ -16,7 +16,7 @@
 	<section class="content">
 		<h1 class="condition-title">Условие</h1>
 		<div class="condition">
-			Дана сторона квадрата a. Найти его периметр P = 4*a
+			Дана сторона квадрата a. Найти его площадь S = a²
 		</div>
 		<h1 class="examples-title">Примеры</h1>
 		<div class="examples">
@@ -25,12 +25,12 @@
 				<div class="last-part">Пример верного решения</div>
 			</div>
 			<div class="example">
-				<div class="first-part">a = 1</div>
+				<div class="first-part">a = 2</div>
 				<div class="last-part">P = 4</div>
 			</div>
 			<div class="example">
-				<div class="first-part">a = 1.7</div>
-				<div class="last-part"> P = 6.8</div>
+				<div class="first-part">a = 1.5</div>
+				<div class="last-part"> P = 2.25</div>
 			</div>
 		</div>
 		<h1 class="decision-title">Решение</h1>
@@ -42,7 +42,7 @@
 				<div class="code-block">
 					<pre>
 	a = int(input("Введите сторону квадрата: "))
-	print("P =",(a*4))
+	print("S =",(a**2))
 					</pre>
 				</div>
 			</div>
@@ -53,15 +53,15 @@
 				<div class="code-block">
 					<pre>
 	var a = +prompt("a = ");
-	var P = 4*a
-	alert("S = " + P);					
+	var S = Math.pow(a,2);
+	alert("S = " + S);				
 					</pre>
 				</div>
 			</div>		
 		</div>
 		<h1 class="comment-title">Комментарий</h1>
 		<div class="comment">
-			В задаче используются переменные, их ввод и вывод
+			При решении задачи на языке Python при возведении в степень можно использовать **2, а можно подключить библиотеку math и использовать math.pow(a,2)
 		</div>
 	</section>
 </main>
