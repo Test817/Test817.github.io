@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">	
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<h1>Решение задач из паскаля на языках программирования Python и Javascript</h1>
+	</header>
+	<main>
+	<section class="border"></section>
+	<section class="content">
+		<h1 class="condition-title">Условие</h1>
+		<div class="condition">
+			Даны стороны прямоугольника a и b. Найти его площадь S = a*b и периметр P = 2*(a + b)
+		</div>
+		<h1 class="examples-title">Примеры</h1>
+		<div class="examples">
+			<div class="example">
+				<div class="first-part">Исходные данные</div>
+				<div class="last-part">Пример верного решения</div>
+			</div>
+			<div class="example">
+				<div class="first-part">
+					<pre>
+a = 3
+b = 4
+					</pre>
+				</div>
+
+				<div class="last-part">
+					<pre>
+S = 12
+P = 14
+					</pre>
+				</div>
+			</div>
+			<div class="example">
+				<div class="first-part">
+					<pre>
+a = 9.8
+b = 2.5
+					</pre>
+				</div>
+
+				<div class="last-part">
+					<pre>
+S = 24.5
+P = 24.6	
+					</pre>
+				</div>
+			</div>
+		<h1 class="decision-title">Решение</h1>
+		<div class="decision">
+			<div class="code">
+				<div class="title-code">
+					<h1>Решение на языке Python</h1>
+				</div>
+				<div class="code-block">
+					<pre>
+	a = int(input("Длина: "))
+	b = int(input("Ширина: "))
+	print("P = {0} , S = {1}".format(2*a+2*b,a*b))
+					</pre>
+				</div>
+			</div>
+			<div class="code" id="second">
+				<div class="title-code">
+					<h1>Решение на языке Javascript</h1>
+				</div>
+				<div class="code-block">
+					<pre>
+	var a = +prompt("a = ");
+	var b = +prompt("b = ");
+	var S = a*b;
+	var P = 2*(a+b);
+	alert("S = " + S);
+	alert("P = " + P);				
+					</pre>
+				</div>
+			</div>		
+		</div>
+		<h1 class="comment-title">Комментарий</h1>
+		<div class="comment">
+			В задаче используются переменные, их ввод и вывод
+		</div>
+	</section>
+</main>
+<footer></footer>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
