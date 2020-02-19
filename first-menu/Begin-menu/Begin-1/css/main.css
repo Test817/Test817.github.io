@@ -150,61 +150,109 @@ a {
   margin: 50px 0 50px 0;
 }
 
-.wrapper main .content .decision {
+.wrapper main .content .desicion-comment {
   width: 100%;
   display: flex;
-  margin-bottom: 50px;
+  flex-direction: column;
+  margin-bottom: 150px;
 }
 
-.wrapper main .content .decision .code {
+.wrapper main .content .desicion-comment .decision {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+
+.wrapper main .content .desicion-comment .decision .code {
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 1px solid black;
-  border-right: none;
 }
 
-.wrapper main .content .decision .code .title-code {
+.wrapper main .content .desicion-comment .decision .code .title-code {
   width: 100%;
   border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  padding: 20px 0 20px 0;
 }
 
-.wrapper main .content .decision .code h1 {
+.wrapper main .content .desicion-comment .decision .code h1 {
   text-align: center;
   font-size: 35px;
-  margin: 20px 0 20px 0;
 }
 
-.wrapper main .content .decision .code .code-block {
+.wrapper main .content .desicion-comment .decision .code .code-block {
   width: 100%;
+  overflow: auto;
 }
 
-.wrapper main .content .decision .code .code-block pre {
-  padding: 50px 0 50px 0;
+.wrapper main .content .desicion-comment .decision .code .code-block pre {
+  font-size: 20px;
+  word-wrap: break-word;
+  padding: 50px 0 50px 20px;
+}
+
+.wrapper main .content .desicion-comment .comment {
   width: 100%;
+  display: flex;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-title {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 20px 0 20px 0;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-title h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-block {
+  width: 100%;
+  padding: 50px 0 50px 20px;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-block h1 {
   font-size: 20px;
 }
 
-.wrapper main .content .decision #second {
+.wrapper main .content .desicion-comment .first {
   border-right: 1px solid black;
-}
-
-.wrapper main .content .comment-title {
-  font-size: 35px;
-  margin: 50px 0 50px 0;
-}
-
-.wrapper main .content .comment {
-  font-size: 30px;
-  margin-bottom: 100px;
 }
 
 .wrapper footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  cursor: pointer;
   background-color: black;
+}
+
+.wrapper footer h3 {
+  font-size: 20px;
+  font-family: "Open Sans";
+  margin-right: 10px;
+  color: white;
+}
+
+.wrapper footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
 }
