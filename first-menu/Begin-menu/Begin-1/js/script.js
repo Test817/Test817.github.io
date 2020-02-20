@@ -15,7 +15,7 @@ $(document).ready(function() {
 	}
 
 	var P = 4*a;
-
+// Кек
 	$(".example:last-child .first-part").html("a = " + a);
 	$(".example:last-child .last-part").html("P = " + P);
 });
