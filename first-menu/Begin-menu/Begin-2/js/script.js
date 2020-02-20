@@ -14,8 +14,8 @@ $(document).ready(function() {
 		a = getRandomInt(1, 10);
 	}
 
-	var P = 4*a;
+	var S = a*a;
 
 	$(".example:last-child .first-part").html("a = " + a);
-	$(".example:last-child .last-part").html("P = " + P);
+	$(".example:last-child .last-part").html("S = " + S);
 });
