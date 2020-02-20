@@ -221,6 +221,7 @@ a {
 }
 
 .wrapper main .content .desicion-comment .comment .comment-1 .comment-block h1 {
+  word-wrap: break-word;
   font-size: 20px;
 }
 
