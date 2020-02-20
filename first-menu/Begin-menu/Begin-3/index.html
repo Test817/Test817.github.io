@@ -16,7 +16,7 @@
 	<section class="content">
 		<h1 class="condition-title">Условие</h1>
 		<div class="condition">
-			Даны стороны прямоугольника a и b. Найти его площадь S = a*b и периметр P = 2*(a + b).
+			Дана сторона квадрата. Найти его периметр P = 4*a
 		</div>
 		<h1 class="examples-title">Примеры</h1>
 		<div class="examples">
@@ -26,64 +26,73 @@
 			</div>
 			<div class="example">
 				<div class="first-part">
-					a = 3<br>
-					b = 4
+					a = 1<br>
+					b = 1			
 				</div>
-
-				<div class="last-part">
-					S = 12<br>
-					P = 14
-				</div>
+				<div class="last-part">P = 4</div>
 			</div>
 			<div class="example">
-				<div class="first-part">
-					a = 9.8<br>
-					b = 2.5
-				</div>
-
-				<div class="last-part">
-					S = 24.5<br>
-					P = 24.6	
-				</div>
+				<div class="first-part">a = 1.7</div>
+				<div class="last-part"> P = 6.8</div>
 			</div>
 		</div>
 		<h1 class="decision-title">Решение</h1>
-		<div class="decision">
-			<div class="code">
-				<div class="title-code">
-					<h1>Решение на языке Python</h1>
+		<div class="desicion-comment">
+			<div class="decision">
+				<div class="code first">
+					<div class="title-code">
+						<h1>Решение на языке Python</h1>
+					</div>
+					<div class="code-block">
+						<pre>
+a = int(input("Введите сторону квадрата: "))
+print("P =",(a*4))
+						</pre>
+					</div>
 				</div>
-				<div class="code-block">
-					<pre>
-	a = int(input("Длина: "))
-	b = int(input("Ширина: "))
-	print("P = {0} , S = {1}".format(2*a+2*b,a*b))
-					</pre>
+				<div class="code">
+					<div class="title-code">
+						<h1>Решение на языке Javascript</h1>
+					</div>
+					<div class="code-block">
+						<pre>
+var a = +prompt("a = ");
+var P = Math.round(4*a*10) / 10;
+alert("S = " + P);					
+						</pre>
+					</div>
+				</div>		
+			</div>
+			<div class="comment">
+				<div class="comment-1 first">
+					<div class="comment-title">
+						<h1>Комментарий</h1>
+					</div>
+					<div class="comment-block">
+						<h1>
+		В задаче используются переменные, их ввод и вывод
+						</h1>
+					</div>
+					
+				</div>
+				<div class="comment-1">
+					<div class="comment-title">
+						<h1>Комментарий</h1>
+					</div>
+					<div class="comment-block">
+						<h1>
+		В задаче используются переменные, их ввод и вывод
+						</h1>
+					</div>
 				</div>
 			</div>
-			<div class="code" id="second">
-				<div class="title-code">
-					<h1>Решение на языке Javascript</h1>
-				</div>
-				<div class="code-block">
-					<pre>
-	var a = +prompt("a = ");
-	var b = +prompt("b = ");
-	var S = a*b;
-	var P = 2*(a+b);
-	alert("S = " + S);
-	alert("P = " + P);				
-					</pre>
-				</div>
-			</div>		
-		</div>
-		<h1 class="comment-title">Комментарий</h1>
-		<div class="comment">
-			Нет
-		</div>
+		</div>		
 	</section>
 </main>
-<footer></footer>
+<footer  onclick="window.open('https://vk.com/id345691818','_blank')"w>
+		<h3>Автор: Ярослав Михалёв</h3>
+		<img src="../../img/yarik.jpg">
+</footer>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
