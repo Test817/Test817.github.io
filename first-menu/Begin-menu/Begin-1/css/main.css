@@ -218,6 +218,7 @@ a {
 .wrapper main .content .desicion-comment .comment .comment-1 .comment-block {
   width: 100%;
   padding: 50px 0 50px 20px;
+  word-wrap: break-word;
 }
 
 .wrapper main .content .desicion-comment .comment .comment-1 .comment-block h1 {
