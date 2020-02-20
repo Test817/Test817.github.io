@@ -16,7 +16,7 @@
 	<section class="content">
 		<h1 class="condition-title">Условие</h1>
 		<div class="condition">
-			Дана сторона квадрата. Найти его периметр P = 4*a
+			Дан диаметр окружности d. Найти её длину L = π*d. В качестве значения π использовать 3.14.
 		</div>
 		<h1 class="examples-title">Примеры</h1>
 		<div class="examples">
@@ -25,15 +25,12 @@
 				<div class="last-part">Пример верного решения</div>
 			</div>
 			<div class="example">
-				<div class="first-part">
-					a = 1<br>
-					b = 1			
-				</div>
-				<div class="last-part">P = 4</div>
+				<div class="first-part">d = 2</div>
+				<div class="last-part">L = 6.28</div>
 			</div>
 			<div class="example">
-				<div class="first-part">a = 1.7</div>
-				<div class="last-part"> P = 6.8</div>
+				<div class="first-part">d = 7</div>
+				<div class="last-part">L = 21.98</div>
 			</div>
 		</div>
 		<h1 class="decision-title">Решение</h1>
@@ -45,8 +42,9 @@
 					</div>
 					<div class="code-block">
 						<pre>
-a = int(input("Введите сторону квадрата: "))
-print("P =",(a*4))
+d = int(input("Введите диаметр окружности: "))
+P = 3.14
+print("L = ",(d*P))
 						</pre>
 					</div>
 				</div>
@@ -56,9 +54,10 @@ print("P =",(a*4))
 					</div>
 					<div class="code-block">
 						<pre>
-var a = +prompt("a = ");
-var P = Math.round(4*a*10) / 10;
-alert("S = " + P);					
+const pi = 3.14;
+var d = +prompt("d = ");
+var L = pi*d;
+alert("L = " + L);					
 						</pre>
 					</div>
 				</div>		
@@ -70,7 +69,7 @@ alert("S = " + P);
 					</div>
 					<div class="comment-block">
 						<h1>
-		В задаче используются переменные, их ввод и вывод
+
 						</h1>
 					</div>
 					
@@ -81,7 +80,7 @@ alert("S = " + P);
 					</div>
 					<div class="comment-block">
 						<h1>
-		В задаче используются переменные, их ввод и вывод
+		В решении используется константа.
 						</h1>
 					</div>
 				</div>
