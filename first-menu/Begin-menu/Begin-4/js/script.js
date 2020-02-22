@@ -15,7 +15,7 @@ $(document).ready(function() {
 	}
 
 	const pi = 3.14;
-	var L = pi*d;				
+	var L = Math.round(2*pi*d * 100) /100;			
 					
 	$(".example:last-child .first-part").html("d = " + d);
 	$(".example:last-child .last-part").html("L = " + L);
