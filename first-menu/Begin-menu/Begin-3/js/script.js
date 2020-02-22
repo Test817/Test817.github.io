@@ -7,8 +7,10 @@ $(document).ready(function() {
 	b = getRandomInt(1,10);
 
 	while(true){
-		if(a != parseInt($(".example:nth-child(2) .first-part").text().slice(5,6)) &&
-		 b != parseInt($(".example:nth-child(2) .first-part").text().slice(10))){
+		if(a != 2){
+			break;
+		}
+		if(b != 3){
 			break;
 		}
 
