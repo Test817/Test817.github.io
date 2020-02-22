@@ -15,7 +15,7 @@ $(document).ready(function() {
 	}
 
 	var S = a*a;
-
+// asdfa
 	$(".example:last-child .first-part").html("a = " + a);
 	$(".example:last-child .last-part").html("S = " + S);
 });
