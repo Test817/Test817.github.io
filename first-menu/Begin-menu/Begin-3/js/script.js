@@ -6,10 +6,11 @@ $(document).ready(function() {
 	b = getRandomInt(1,10);
 
 	while(true){
-		alert([a,b]);
+		
 		if(a != 2 && b != 3){
 			break;
 		}
+
 		a = getRandomInt(1, 10);
 		b = getRandomInt(1, 10);
 		
