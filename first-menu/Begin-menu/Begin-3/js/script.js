@@ -4,5 +4,5 @@ function getRandomInt(min, max){
 
 $(document).ready(function() {
 
-	alert($(".example:nth-child(2) .first-part").text().slice(3))
+	alert($(".example:nth-child(2) .first-part").text().slice(4,-3))
 });
