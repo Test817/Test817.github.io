@@ -1,9 +1,9 @@
+<<<<<<< HEAD
 function getRandomInt(min, max){
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 $(document).ready(function() {
-
 	a = getRandomInt(1, 10);
 	b = getRandomInt(1,10);
 
@@ -23,3 +23,7 @@ $(document).ready(function() {
 	$(".example:last-child .first-part").html("a = " + a + "<br> b = " + b);
 	$(".example:last-child .last-part").html("S = " + S + "<br> P  = " + P);
 });
+=======
+
+	
+
