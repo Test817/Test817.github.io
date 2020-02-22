@@ -3,7 +3,7 @@ function getRandomInt(min, max){
 }
 
 $(document).ready(function() {
-
+//asdf
 	alert(parseInt($(".example:nth-child(2) .first-part").text().slice(5,6)));
 	alert(parseInt($(".example:nth-child(2) .first-part").text().slice(10)));
 });
