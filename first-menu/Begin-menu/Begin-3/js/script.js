@@ -7,15 +7,14 @@ $(document).ready(function() {
 	b = getRandomInt(1,10);
 
 	while(true){
-		if(a != 2){
-			break;
-		}
-		if(b != 3){
-			break;
-		}
 
-		a = getRandomInt(1, 10);
-		b = getRamdomInt(1, 10);
+		if(a != 2 && b != 3){
+			break;
+		} else {
+			a = getRandomInt(1, 10);
+			b = getRamdomInt(1, 10);
+		}
+		
 	}
 
 	var S = a*b;
