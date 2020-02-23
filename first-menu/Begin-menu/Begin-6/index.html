@@ -16,7 +16,7 @@
 	<section class="content">
 		<h1 class="condition-title">Условие</h1>
 		<div class="condition">
-			Дан диаметр окружности d. Найти её длину L = π*d. В качестве значения π использовать 3.14.
+			Даны длины ребер a, b, c прямоугольного параллелепипеда. Найти его объем V = a*b*c и площадь поверхности S = 2*(a*b + b*c + a*c).
 		</div>
 		<h1 class="examples-title">Примеры</h1>
 		<div class="examples">
@@ -25,8 +25,8 @@
 				<div class="last-part">Пример верного решения</div>
 			</div>
 			<div class="example">
-				<div class="first-part">d = 2</div>
-				<div class="last-part">L = 6.28</div>
+				<div class="first-part">a = 2<br> b = 3<br> c = 4</div>
+				<div class="last-part">V = 24<br> S = 26</div>
 			</div>
 			<div class="example">
 				<div class="first-part"></div>
@@ -42,9 +42,10 @@
 					</div>
 					<div class="code-block">
 						<pre>
-d = int(input("Введите диаметр окружности: "))
-P = 3.14
-print("L = ",(d*P))
+a = int(input("Введите длину первого ребра прямоугольного параллепипеда: "))
+b = int(input("Введите длину второго ребра прямоугольного параллепипеда: "))
+c = int(input("Введите длину третьего ребра прямоугольного параллепипеда: "))
+print("V = {0},S = {1}".format(a*b*c,2*(a*b + b*c + a*c)))
 						</pre>
 					</div>
 				</div>
@@ -54,10 +55,12 @@ print("L = ",(d*P))
 					</div>
 					<div class="code-block">
 						<pre>
-const pi = 3.14;
-var d = +prompt("d = ");
-var L = pi*d;
-alert("L = " + L);					
+var a = +prompt("a = ");
+var b = +prompt("b = ");
+var c = +prompt("c = ");
+var V = a*b*c;
+var S = 2*(a*b + b*c + a*c;
+alert("V = " + V + "        S = " + S);					
 						</pre>
 					</div>
 				</div>		
@@ -69,7 +72,7 @@ alert("L = " + L);
 					</div>
 					<div class="comment-block">
 						<h1>
-
+	Как видите, в случае с питоном вообще можно не заморачиваться
 						</h1>
 					</div>
 					
@@ -80,7 +83,7 @@ alert("L = " + L);
 					</div>
 					<div class="comment-block">
 						<h1>
-		В решении используется константа.
+		
 						</h1>
 					</div>
 				</div>
