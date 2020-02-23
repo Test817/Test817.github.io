@@ -21,6 +21,6 @@ $(document).ready(function() {
 	var V = Math.round(a*b*c * 1000) / 1000;
 	var S = Math.round(2*(a*b + b*c + a*c) * 100) / 100;
 					
-	$(".example:last-child .first-part").html("V = " + V);
-	$(".example:last-child .last-part").html("S = " + S);
+	$(".example:last-child .first-part").html("a = " + a + "<br>b = " + b + "<br>c = " + c);
+	$(".example:last-child .last-part").html("V = " + V + "<br>S = " + S);
 });
