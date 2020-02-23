@@ -18,7 +18,7 @@ $(document).ready(function() {
 	var S = Math.round(6*Math.pow(a,2) * 10) / 10;
 
 	$(".example:last-child .first-part").html("a = " + a);
-	$(".example:last-child .last-part").html("V = " + V + "<br> s  = " + S);
+	$(".example:last-child .last-part").html("V = " + V + "<br> S  = " + S);
 });
 
 	
