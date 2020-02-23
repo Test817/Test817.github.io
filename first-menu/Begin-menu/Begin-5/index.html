@@ -16,7 +16,7 @@
 	<section class="content">
 		<h1 class="condition-title">Условие</h1>
 		<div class="condition">
-			Даны стороны прямоугольника a и b. Найти его площадь S = a*b и периметр P = 2(a + b).
+			Дана длина ребра куба a. Найти обьем куба V = a³ и площадь его поверхности S = 6*a².
 		</div>
 		<h1 class="examples-title">Примеры</h1>
 		<div class="examples">
@@ -25,11 +25,11 @@
 				<div class="last-part">Пример верного решения</div>
 			</div>
 			<div class="example">
-				<div class="first-part">a = 2<br>b = 3			
+				<div class="first-part">a = 2			
 				</div>
 				<div class="last-part">
-					S = 6<br>
-					P = 10
+					V = 8<br>
+					S = 24
 				</div>
 			</div>
 			<div class="example">
@@ -50,9 +50,8 @@
 					</div>
 					<div class="code-block">
 						<pre>
-a = int(input("Длина: "))
-b = int(input("Ширина: "))
-print("P = {0} , S = {1}".format(2*a+2*b,a*b))
+a = int(input("Введите длину ребра куба: "))
+print("V = {0},S = {1}".format(a**3,6*a**2))
 						</pre>
 					</div>
 				</div>
@@ -63,11 +62,9 @@ print("P = {0} , S = {1}".format(2*a+2*b,a*b))
 					<div class="code-block">
 						<pre>
 var a = +prompt("a = ");
-var b = +prompt("b = ");
-var S = a*b;
-var P = 2*(a+b);
-alert("S = " + S);
-alert("P = " + P);				
+var V = Math.pow(a,3);
+var S = 6*Math.pow(a,2);
+alert("V = " + V + "        S = " + S);				
 						</pre>
 					</div>
 				</div>		
@@ -79,7 +76,7 @@ alert("P = " + P);
 					</div>
 					<div class="comment-block">
 						<h1>
-		Вывод осуществляется с помощью метода format.
+		
 						</h1>
 					</div>
 					
