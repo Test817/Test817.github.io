@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.wrapper header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.wrapper h1 {
+  font-size: 30px;
+}
+
+.wrapper main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper main .border {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.wrapper main .content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper main .content .condition-title {
+  font-size: 35px;
+}
+
+.wrapper main .content .condition {
+  width: 100%;
+  border: 1px solid black;
+  margin: 50px 0 50px 0;
+  display: flex;
+  padding: 20px 0 20px 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.wrapper main .content .condition .kek {
+  font-weight: bold;
+}
+
+.wrapper main .content .examples-title {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.wrapper main .content .examples {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.wrapper main .content .examples .example {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.wrapper main .content .examples .example .first-part {
+  width: 50%;
+  border-right: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 20px 0 20px 0;
+}
+
+.wrapper main .content .examples .example .last-part {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 20px 0 20px 0;
+}
+
+.wrapper main .content .decision-title {
+  font-size: 35px;
+  margin: 50px 0 50px 0;
+}
+
+.wrapper main .content .desicion-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.wrapper main .content .desicion-comment .decision {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+
+.wrapper main .content .desicion-comment .decision .code {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.wrapper main .content .desicion-comment .decision .code .title-code {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 20px 0 20px 0;
+}
+
+.wrapper main .content .desicion-comment .decision .code h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.wrapper main .content .desicion-comment .decision .code .code-block {
+  width: 100%;
+  overflow: auto;
+}
+
+.wrapper main .content .desicion-comment .decision .code .code-block pre {
+  font-size: 20px;
+  word-wrap: break-word;
+  padding: 50px 0 50px 20px;
+}
+
+.wrapper main .content .desicion-comment .comment {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-title {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 20px 0 20px 0;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-title h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-block {
+  width: 100%;
+  padding: 50px 0 50px 20px;
+}
+
+.wrapper main .content .desicion-comment .comment .comment-1 .comment-block h1 {
+  font-size: 20px;
+}
+
+.wrapper main .content .desicion-comment .first {
+  border-right: 1px solid black;
+}
+
+.wrapper footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.wrapper footer h3 {
+  font-size: 20px;
+  font-family: "Open Sans";
+  margin-right: 10px;
+  color: white;
+}
+
+.wrapper footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+}
