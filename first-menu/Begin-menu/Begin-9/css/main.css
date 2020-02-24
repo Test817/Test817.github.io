@@ -107,6 +107,10 @@ a {
   font-size: 20px;
 }
 
+.wrapper main .content .condition .kek {
+  font-weight: bold;
+}
+
 .wrapper main .content .examples-title {
   font-size: 35px;
   margin-bottom: 50px;
